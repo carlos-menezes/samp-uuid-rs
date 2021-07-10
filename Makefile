@@ -7,9 +7,8 @@ else
 	ifeq ($(shell uname), Linux)
 		TOOLCHAIN = +stable-i686-unknown-linux-gnu
 		BINARYNAME = libuuid.so
-		OUPUTNAME = libuuid.so
-		CP_RELEASE = cp target/release/$(BINARYNAME) plugins/$(OUPUTNAME)
-		CP_DEBUG = cp target/debug/$(BINARYNAME) plugins/$(OUPUTNAME)
+		OUPUTNAME = uuid.so
+		COPY = cp target/release/$(BINARYNAME) plugins/$(OUPUTNAME)
 	endif
 endif
 
