@@ -24,7 +24,7 @@ Include in your code and begin using the library:
 
 ```cpp
 new dest[UUID_LEN];
-result = UUID(dest);
+UUID(dest);
 printf("%s", dest); // xxxxxxxx-xxxx-Mxxx-Nxxx-xxxxxxxxxxxx
 ```
 
