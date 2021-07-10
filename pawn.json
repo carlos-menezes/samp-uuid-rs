@@ -23,12 +23,12 @@
     },
     "resources": [
         {
-            "name": "plugins/uuid.so",
+            "name": "uuid.so",
             "archive": false,
             "platform": "linux"
         },
         {
-            "name": "plugins/uuid.dll",
+            "name": "uuid.dll",
             "archive": false,
             "platform": "windows"
         }
