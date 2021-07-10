@@ -1,0 +1,36 @@
+{
+    "user": "carlos-menezes",
+    "repo": "samp-uuid-rs",
+    "entry": "pawn-tests/test.pwn",
+    "output": "gamemodes/main.amx",
+    "dependencies": ["sampctl/samp-stdlib"],
+    "dev_dependencies": ["pawn-lang/YSI-Includes@5.x"],
+    "include_path": "include",
+    "local": true,
+    "builds": [
+        {
+            "name": "test",
+            "includes": ["./include"]
+        }
+    ],
+    "runtime": {
+        "rcon_password": "safe_rcon_password",
+        "port": 7777,
+        "plugins": ["uuid"],
+        "hostname": "pawn-env test",
+        "gamemodes": ["test"],
+        "mode": "y_testing"
+    },
+    "resources": [
+        {
+            "name": "plugins/uuid.so",
+            "archive": false,
+            "platform": "linux"
+        },
+        {
+            "name": "plugins/uuid.dll",
+            "archive": false,
+            "platform": "windows"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+[package]
+name = "samp-uuid"
+version = "0.1.0"
+authors = ["Carlos Menezes <carlos-menezes212@hotmail.com>"]
+edition = "2018"
+
+[lib]
+name = "uuid"
+crate-type = ["cdylib"]
+
+[dependencies]
+samp = "0.1.2"
+uuid = {version = "0.8.2", features = ["v4"]}
