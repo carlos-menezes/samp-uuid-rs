@@ -9,10 +9,8 @@
 main() {}
 
 Test:Generate() {
-    new bool:result;
-
     new dest[UUID_LEN];
-    result = UUID(dest);
+    UUID(dest);
     printf("%s", dest);
 
     ASSERT(strlen(dest) > 0);
